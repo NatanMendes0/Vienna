@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css e js/styleLoginScreen.css">
+    <title>VIENNA - Registro</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-div-icon">
+            <nav>
+                <img src="../imagens/icon.svg" alt="Vienna Icon" href="/home.html">
+            </nav>
+        </div>
+        <div>
+            <a class="header-text-vienna" href="home.html">VIENNA</a>
+        </div>
+    </header>
+        <form method="post" main class="main" action="php/rotinas/novoUsuario.php">
+            <div class="main-text-login" style="margin-top: 30px; margin-bottom: 30px;">REGISTRO</div>
+            <label>NOME:</label> <input class="main-input" type="text" name="nome" style="margin-bottom: 20px;">
+            <br>
+            <label>CPF:</label> <input class="main-input" type="text" name="cpf" style="margin-bottom: 20px;">
+            <br>
+            <label>E-MAIL:</label><input class="main-input" type="text" name="email" style="margin-bottom: 20px;">
+            <br>
+            <label>SENHA:</label> <input class="main-input" type="password" name="senha" style="margin-bottom: 20px;">
+            <br>
+            <label><a style="font-size: 25px;">CONFIRMAR SENHA:</a></label> <input class="main-input" type="passo"
+                name="confsenha">
+            <br>
+            <input class="main-input" type="submit" value="FINALIZAR CADASTRO"
+                style="background:#CAFF42;color: #49708A; margin-top: 50px;font-size: 20px; width: 300px;">
+            <br>
+            <nav>
+                <a href="telaLogin.html"
+                    style="margin-top: 90px; object-position: center bottom; font-size: 25px; text-decoration: none; color: #49708A;">JÁ
+                    TEM CADASTRO? FAÇA SEU LOGIN AQUI</a>
+            </nav>
+        </form>
+</body>
+
+</html>

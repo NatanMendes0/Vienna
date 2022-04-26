@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 100%;
+    background-color: #D0E0EB;
+    background-repeat: no-repeat;
+    background-position: 40px 40px 40px;
+    background-size: cover;
+    /* background: rgba(0, 0, 0, 0.082); */
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1%;
+    background-color: #CAFF42;
+}
+
+.header-text-vienna{
+    
+    position: absolute;
+    width: 190px;
+    left: 13%;
+    top: 5%;
+
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 65px;
+
+    color: #EBF7F8;
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.header-div-button-login {
+    width: 269px;
+    height: 77px;
+    justify-content: right;
+    display: flex;
+}
+
+.header-button-style {
+    width: 269px;
+    height: 77px;
+    border: none;
+    background: #EBF7F8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+
+    font-family: 'Nunito', sans-serif;
+    font-size: 36px;
+    color: #49708A;
+}
+
+.header-button-login {
+    width: 100%;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.main-h1 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 36px;
+    color: #49708A;
+    text-align: center; 
+    font-size: 50px;
+    background-color: #EBF7F8;
+}
+
+.main-product-name{
+    margin-top: 5%;
+    padding: 3%;
+    width: 100%;
+    height: 100%;
+
+    text-align: center;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 130%;
+
+    color: #EBF7F8;
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    background: #CAFF42;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+.main-product-picture{
+    margin-top: 10px;
+    width: 380px;
+    height: 363px;
+    left: 66px;
+    top: 312px;
+
+    background: #C4C4C4;
+}
+
+.main-product-price{
+    width: 380px;
+    height: 131px;
+    left: 66px;
+    top: 675px;
+
+    background: #EBF7F8;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15);
+
+    padding: 30px;
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    font-size: 50px;
+    background: #EBF7F8;
+    color: #49708A;
+}
+
+.foot {
+    position: absolute;
+    width: 100%;
+    height: 140px;
+    left: 0px;
+    top: 993px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 26px;
+
+    background: #88ABC2;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15);
+}
