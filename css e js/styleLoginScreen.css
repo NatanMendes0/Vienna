@@ -35,7 +35,7 @@ body {
 .main-input-logar {
     background: #CAFF42;
     color: #49708A;
-    margin-top: 5%;
+    margin: 6%;
     font-size: 20px;
     width: 23%;
     height: 60px;
@@ -43,8 +43,7 @@ body {
     text-align: center;
 }
 
-.main-text-login {
-    margin-top: 5%;
+.main-text-login {    
     padding: 5%;
 }
 
@@ -53,13 +52,14 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    height: 700px;
 }
 
 .box {
-    width: 50%;
+    width: 60%;
 }
 
-.header {
+.header{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -68,17 +68,19 @@ body {
     background-color: #CAFF42;
 }
 
-/* AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA */
-
-.header-text-vienna { 
-
-    left: 13%; 
+.header-text-vienna{
+    
+    position: absolute;
+    width: 190px;
+    left: 13%;
+    top: 5%;
 
     font-family: 'Nunito';
     font-style: normal;
     font-weight: 900;
     font-size: 48px;
     line-height: 65px;
+    text-decoration: none;
 
     color: #EBF7F8;
 
@@ -86,10 +88,8 @@ body {
 }
 
 .foot-register {
-    object-position: center;
-    font-size: 25px;
+    text-align: center;
     text-decoration: none;
+    font-size: 25px;
     color: #49708A;
-    margin: auto;
-    padding: 4%;
 }
