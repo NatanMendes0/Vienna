@@ -24,12 +24,13 @@ body {
 }
 
 .main-input {
-    width: 400px;
+    width: 50%;
     height: 45px;
 
     background: #C4C4C4;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15);
     border-radius: 20px;
+    margin-bottom: 3%;
 }
 
 .main-input-logar {
@@ -43,8 +44,28 @@ body {
     text-align: center;
 }
 
-.main-text-login {    
+.main-text-login {
     padding: 5%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.fin-input {
+    background: #CAFF42;
+    color: #49708A;
+    margin: 5%;
+    font-size: 20px;
+    width: 50%;
+    height: 45px;
+    border-radius: 20px;
+}
+
+.pos-cad {
+    margin-top: 90px;
+    object-position: center bottom;
+    font-size: 25px;
+    text-decoration: none;
+    color: #49708A;
 }
 
 .container {
@@ -56,10 +77,10 @@ body {
 }
 
 .box {
-    width: 60%;
+    width: 45%;
 }
 
-.header{
+.header {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -68,8 +89,8 @@ body {
     background-color: #CAFF42;
 }
 
-.header-text-vienna{
-    
+.header-text-vienna {
+
     position: absolute;
     width: 190px;
     left: 13%;
