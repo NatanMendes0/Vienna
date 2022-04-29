@@ -26,13 +26,15 @@ function banco_select_email_senha ($email, $senha){
 function banco_insert_usuario($nome, $cpf, $email, $senha){
     global $mysqli;
 
-    // senha codificada
+    //codificada a senha
 	$hash_senha = hash("sha256", $senha, false);
+
 	try {
-		$sql = "INSERT INTO `usuarios` (`NOME`, `CPF`, `EMAIL`, `SENHA`) VALUES ('$nome','$cpf','$email','$hash_senha')";
+		$sql = "INSERT INTO `usuarios` (`NOME`, `CPF`, `EMAIL`, `SENHA`) VALUES ('$nome','$cpf','$email','$hash_senha')"; //insere a senha ja codificada no campo senha
         $result = $mysqli->query($sql);
 	} catch(mysqli_sql_exception $e) {
-		//die( 'ERROR: ' . $e->getMessage());
+		//mostra mensagem de erro caso ja tiver tiver o campo email cadastrado
+        //die( 'ERROR: ' . $e->getMessage());        
         die("Ocorreu um erro na inclusão do usuário. ({$e->getMessage()})");
 	}    
     return $result;
