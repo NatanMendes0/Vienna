@@ -16,15 +16,15 @@
             <a class="header-text-vienna" href="home.html">VIENNA</a>
         </div>
     </header>
-    <div class="container">
-        <div class="box">
-            <form method="post" class="main" action="php/rotinas/login.php">
-                <div class="main-text-login">LOGIN</div>
-                <label>E-MAIL:</label> <input class="main-input" type="text" style="margin-bottom: 70px;" name="email">
+    <div class="login">
+            <form method="post" action="php/rotinas/login.php">
+                <h2>LOGIN</h2>
                 <br>
-                <label>SENHA:</label> <input class="main-input" type="password" name="senha">
+                <label>E-MAIL:</label> <input type="text" name="email">
                 <br>
-                <input class="main-input-logar" type="submit" value="LOGAR">
+                <label>SENHA:</label> <input type="password" name="senha">
+                <br>
+                <input class="login-input-logar" type="submit" value="LOGAR">
                 <br>
                 <a href="telaRegistro.html" class="foot-register">REGISTRE-SE</a>
             </form>

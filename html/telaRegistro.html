@@ -18,28 +18,28 @@
             <a class="header-text-vienna" href="home.html">VIENNA</a>
         </div>
     </header>
-        <div class="container">
-            <div class="box">
-                <form method="post" class="main" action="php/rotinas/novoUsuario.php">
-                    <div class="main-text-login">REGISTRO</div>
-                    <label>NOME:</label> <input class="main-input" type="text" name="nome">
-                    <br>
-                    <label>CPF:</label> <input class="main-input" type="number" name="cpf">
-                    <br>
-                    <label>E-MAIL:</label><input class="main-input" type="email" name="email">
-                    <br>
-                    <label>SENHA:</label> <input class="main-input" type="password" name="senha">
-                    <br>
-                    <label>CONFIRMAR SENHA:</label> <input class="main-input" type="password" name="confsenha">
-                    <br>
-                    <input class="fin-input" type="submit" value="FINALIZAR CADASTRO">
-                    <nav>
-                        <a href="telaLogin.html" class="pos-cad">JÁ TEM CADASTRO? FAÇA SEU LOGIN AQUI</a>
-                    </nav>
-                </form>
-            </div>
-        </div>
-    </header>
+    <div class="register">
+        <form method="post" action="../php/rotinas/novoUsuario.php">
+            <h2>REGISTRO</h2>
+            <br>
+            <label>NOME:</label> <input type="text" name="nome">
+            <br>
+            <label>CPF:</label> <input type="number" name="cpf">
+            <br>
+            <label>E-MAIL:</label><input type="email" name="email">
+            <br>
+            <label>SENHA:</label> <input type="password" name="senha">
+            <br>
+            <label>CONFIRMAR SENHA:</label> <input type="password" name="confsenha">
+            <br>
+            <input class="register-input" type="submit" value="FINALIZAR CADASTRO">
+            <br>
+            <nav>
+                <a href="telaLogin.html" class="pos-cad">JÁ TEM CADASTRO? FAÇA SEU LOGIN AQUI</a>
+            </nav>
+        </form>
+    </div>
+    </div>
 </body>
 
 </html>

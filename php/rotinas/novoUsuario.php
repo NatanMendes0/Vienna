@@ -18,5 +18,5 @@ if ($senha != $confsenha) {
 
 $usuario = banco_insert_usuario($nome, $cpf, $email, $senha);
 
-header("location:../../home.html");
+header("location:../html/home.html");
 ?>

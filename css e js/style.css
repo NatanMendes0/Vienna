@@ -61,6 +61,7 @@ body {
     font-family: 'Nunito', sans-serif;
     font-size: 36px;
     color: #49708A;
+    cursor: pointer;
 }
 
 .header-button-login {
