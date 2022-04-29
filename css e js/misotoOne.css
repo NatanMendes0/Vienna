@@ -1,0 +1,109 @@
+body{
+    background-color: #CAFF42;
+    font-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 40px 40px 40px;
+    background-size: cover;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1%;
+    background-color: #CAFF42;
+}
+
+.header-text-vienna{
+    
+    position: absolute;
+    width: 190px;
+    left: 13%;
+    top: 5%;
+    text-decoration: none;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 65px;
+
+    color: #EBF7F8;
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.header-div-button-login {
+    width: 269px;
+    height: 77px;
+    justify-content: right;
+    display: flex;
+}
+
+.header-button-style {
+    width: 269px;
+    height: 77px;
+    border: none;
+    background: #EBF7F8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+
+    font-family: 'Nunito', sans-serif;
+    font-size: 36px;
+    color: #49708A;
+    cursor: pointer;
+}
+
+.header-button-login {
+    width: 100%;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.main-h1 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 36px;
+    color: #49708A;
+    text-align: center; 
+    font-size: 300%;
+    background-color: #EBF7F8;
+    border-radius: 10px;
+    margin: auto;
+    margin-bottom: 2%;
+    width: 30%;
+    padding: 10px;
+}
+
+.produto{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(235, 247, 248, 0.9);
+    border-radius: 10px;
+    padding: 3%;
+}
+
+.foto-produto{
+    color: #49708A;
+}
+
+.foto-produto>img{
+    width: 170%;
+}
+
+.desc-produto{
+    display: flex;
+    flex-direction: column;
+    color: #49708A;
+    transform: translateX(25%);
+}
+
+ul{
+    font-size: larger;
+}

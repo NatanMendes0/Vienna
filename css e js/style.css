@@ -64,6 +64,14 @@ body {
     cursor: pointer;
 }
 
+.header-text-style {
+    font-family: 'Nunito', sans-serif;
+    margin: 30px;
+    font-size: 30px;
+    color: #EBF7F8;
+    cursor: pointer;
+}
+
 .header-button-login {
     width: 100%;
 }
@@ -80,7 +88,7 @@ body {
     font-size: 36px;
     color: #49708A;
     text-align: center; 
-    font-size: 50px;
+    font-size: 300%;
     background-color: #EBF7F8;
 }
 
@@ -107,12 +115,12 @@ body {
 
 .main-product-picture{
     margin-top: 10px;
+    padding-top: 15%;
+    text-align: center;
     width: 380px;
     height: 363px;
     left: 66px;
     top: 312px;
-
-    background: #C4C4C4;
 }
 
 .main-product-price{
