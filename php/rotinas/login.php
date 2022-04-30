@@ -13,8 +13,15 @@ $usuario = banco_select_email_senha($email, $senha);
 if(is_null($usuario)){
     echo "<script>alert('Usuario Inexistente!');</script>";
 } else {
-    header("location: ../../home.html");
+    // Inicia uma nova sessão
+    session_start();
+    $_SESSION["usuario_logado"] = $usuario;
     echo "<script>alert('Bem-Vindo(a)!);</script>";
+}
+
+if(isset($_GET["sair"])){
+    unset($_SESSION["usuario_logado"]);
+    header("location: ../../home.html");
 }
 
 ?>

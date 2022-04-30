@@ -18,25 +18,29 @@ function banco_select_email_senha ($email, $senha){
     }
     $result -> close();
     unset($sql);
+
+    header("location: ../html/home.html");
     return $obj;
 }
 
 //insere um usuario dentro do banco de dados
-//criar uma validação que verifica se email  digitado ja existe
 function banco_insert_usuario($nome, $cpf, $email, $senha){
     global $mysqli;
 
     //codificada a senha
 	$hash_senha = hash("sha256", $senha, false);
 
+    //validação que verifica se email digitado ja existe
 	try {
 		$sql = "INSERT INTO `usuarios` (`NOME`, `CPF`, `EMAIL`, `SENHA`) VALUES ('$nome','$cpf','$email','$hash_senha')"; //insere a senha ja codificada no campo senha
         $result = $mysqli->query($sql);
 	} catch(mysqli_sql_exception $e) {
-		//mostra mensagem de erro caso ja tiver tiver o campo email cadastrado
+		//mostra mensagem de erro
         //die( 'ERROR: ' . $e->getMessage());        
         die("Ocorreu um erro na inclusão do usuário. ({$e->getMessage()})");
-	}    
+	}
+    
+    header("location: ../../html/home.html");
     return $result;
 }
 
