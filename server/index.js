@@ -4,8 +4,11 @@ const app = express()
 const cors = require('cors')
 const connection = require('./db')
 
+
 // Database connection
 connection()
+
+// Routes
 
 // Middleware
 app.use(cors())
